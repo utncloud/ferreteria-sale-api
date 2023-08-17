@@ -8,7 +8,7 @@ const sales =  [
 
 exports.validateAProduct = function(req, res) {
     
-    try {
+    /*try {
         let product =  salesService.get_product_by_id(req.params.productId);
         console.log(product);
         if (product !== null || product.length > 0){
@@ -19,21 +19,22 @@ exports.validateAProduct = function(req, res) {
 
     } catch (error) {
         res.status(404).send({ success: 'false', message: 'Product not found' });
-    }
+    }*/
     
 
-    /*salesService.get_product_by_id(req.params.productId)
+    salesService.get_product_by_id(req.params.productId)
     .then(function(data){
         console.log('product:');
         console.log(data);
-        if (product.length > 0){        
-            res.status(200).send(product);
+        if (data.length > 0){        
+            res.status(200).send(data);
         }else
             res.status(404).send({ success: 'false', message: 'Product not found' });
-
-    }).catch(function(error){
+    
+    })    
+    .catch(function(error){
         res.status(404).send({ success: 'false', message: 'Product not found' });
-    });    */
+    });
 };
 
 exports.create_a_sale = function(req, res) {

@@ -14,15 +14,19 @@ exports.get_product_by_id = async function(productId){
 
     console.log(response.data);
 
-    if (!response.err){
+    //if (response.data){
         return response.data;
-    }else{
+    //}else{
+
+    //}
+
+    /*}else{
         if (error.data){
             console.log(error.data);
         }else
              console.log(error);
 
-        throw error;
+        throw error;*?
     }
 
     /*await axios({
