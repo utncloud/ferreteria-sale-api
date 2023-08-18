@@ -47,3 +47,4 @@
 2. En el endpoint validateAProduct hay un error, verifique cuál es el error y dónde es el error. Importante: Este endpoint obtiene información del api de product.
 
 "# ferreteria-sale-api" 
+"# ferreteria-sale-api" 
