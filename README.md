@@ -46,3 +46,4 @@
 1. Realizar una prueba de automatización para el endpoint de getAllSales y create_a_sale.
 2. En el endpoint validateAProduct hay un error, verifique cuál es el error y dónde es el error. Importante: Este endpoint obtiene información del api de product.
 
+"# ferreteria-sale-api" 
